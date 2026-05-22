@@ -1,0 +1,846 @@
+{
+  "28": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.Cluster",
+      "org.apache.hadoop.mapreduce.Cluster$1",
+      "org.apache.hadoop.mapreduce.Cluster$JobTrackerStatus",
+      "org.apache.hadoop.mapreduce.ClusterMetrics",
+      "org.apache.hadoop.mapreduce.ContextFactory",
+      "org.apache.hadoop.mapreduce.task.MapContextImpl",
+      "org.apache.hadoop.mapreduce.task.ReduceContextImpl",
+      "org.apache.hadoop.mapreduce.task.ReduceContextImpl$ValueIterable",
+      "org.apache.hadoop.mapreduce.task.ReduceContextImpl$ValueIterator",
+      "org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl",
+      "org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl$DummyReporter",
+      "org.apache.hadoop.mapreduce.task.TaskInputOutputContextImpl",
+      "org.apache.hadoop.mapreduce.task.annotation.Checkpointable",
+      "org.apache.hadoop.mapreduce.task.reduce.EventFetcher",
+      "org.apache.hadoop.mapreduce.task.reduce.ExceptionReporter",
+      "org.apache.hadoop.mapreduce.task.reduce.Fetcher",
+      "org.apache.hadoop.mapreduce.task.reduce.Fetcher$ShuffleErrors",
+      "org.apache.hadoop.mapreduce.task.reduce.Fetcher$TryAgainLaterException",
+      "org.apache.hadoop.mapreduce.task.reduce.IFileWrappedMapOutput"
+    ],
+    "num_classes": 19,
+    "description": "1. Cluster\n2. The provided Java source code is a part of the Apache Hadoop MapReduce framework. It provides a class called \"Cluster\" that allows access to information about the map/reduce cluster. The class has methods to get the status of the JobTracker, get the list of jobs, get the system directory, get the staging area directory, get the job history directory, get the file system, and get the delegation token. The class also has a method to initialize the cluster and close it. The class uses the ClientProtocolProvider and ClientProtocol interfaces to communicate with the JobTracker. It also uses the Configuration and FileSystem classes from the Apache Hadoop framework. The class is part of the public API of the Apache Hadoop MapReduce framework and is intended for use by developers and applications that need to interact with the map/reduce cluster."
+  },
+  "19": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.Counter",
+      "org.apache.hadoop.mapreduce.CounterGroup",
+      "org.apache.hadoop.mapreduce.Counters",
+      "org.apache.hadoop.mapreduce.Counters$FileSystemGroup",
+      "org.apache.hadoop.mapreduce.Counters$FrameworkGroupImpl",
+      "org.apache.hadoop.mapreduce.Counters$GenericGroup",
+      "org.apache.hadoop.mapreduce.Counters$GroupFactory",
+      "org.apache.hadoop.mapreduce.Counters$GroupFactory$1",
+      "org.apache.hadoop.mapreduce.CryptoUtils",
+      "org.apache.hadoop.mapreduce.ID",
+      "org.apache.hadoop.mapreduce.InputFormat",
+      "org.apache.hadoop.mapreduce.MRConfig",
+      "org.apache.hadoop.mapreduce.RecordReader",
+      "org.apache.hadoop.mapreduce.SharedCacheConfig",
+      "org.apache.hadoop.mapreduce.StatusReporter",
+      "org.apache.hadoop.mapreduce.TaskReport",
+      "org.apache.hadoop.mapreduce.TaskTrackerInfo"
+    ],
+    "num_classes": 17,
+    "description": "1. \"Apache Hadoop MapReduce Counters\"\n2. The Apache Hadoop MapReduce Counters cluster is responsible for managing and tracking various metrics related to job/task execution. It provides a flexible and extensible framework for managing counters, which can be used to track a wide range of metrics related to job/task execution. The cluster is designed to be used in the context of MapReduce jobs, where it can be used to track and accumulate various metrics related to job/task execution. The architecture of the cluster is based on the Apache Hadoop framework and uses various design patterns such as the Factory pattern and the Abstract Factory pattern to create and manage different types of counter groups. The components of the cluster interact with each other through various interfaces and classes, and the cluster plays a crucial role in the MapReduce system by providing a way to track and accumulate various metrics related to job/task execution."
+  },
+  "25": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.FileSystemCounter",
+      "org.apache.hadoop.mapreduce.QueueInfo",
+      "org.apache.hadoop.mapreduce.QueueState",
+      "org.apache.hadoop.mapreduce.TaskAttemptContext",
+      "org.apache.hadoop.mapreduce.TaskAttemptID",
+      "org.apache.hadoop.mapreduce.TaskCompletionEvent",
+      "org.apache.hadoop.mapreduce.TaskCompletionEvent$Status",
+      "org.apache.hadoop.mapreduce.TaskCounter",
+      "org.apache.hadoop.mapreduce.TaskID",
+      "org.apache.hadoop.mapreduce.TaskID$CharTaskTypeMaps"
+    ],
+    "num_classes": 10,
+    "description": "1. FileSystemCounter and QueueInfo\n2. FileSystemCounter is an enum used to track various file system metrics in the Hadoop MapReduce framework. QueueInfo is a class that contains information about job queues, including queue name, scheduling information, queue state, and job statuses."
+  },
+  "38": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.InputSplit",
+      "org.apache.hadoop.mapreduce.Job",
+      "org.apache.hadoop.mapreduce.Job$1",
+      "org.apache.hadoop.mapreduce.Job$10",
+      "org.apache.hadoop.mapreduce.Job$11",
+      "org.apache.hadoop.mapreduce.Job$12",
+      "org.apache.hadoop.mapreduce.Job$2",
+      "org.apache.hadoop.mapreduce.Job$3",
+      "org.apache.hadoop.mapreduce.Job$4",
+      "org.apache.hadoop.mapreduce.Job$5",
+      "org.apache.hadoop.mapreduce.Job$6",
+      "org.apache.hadoop.mapreduce.Job$7",
+      "org.apache.hadoop.mapreduce.Job$8",
+      "org.apache.hadoop.mapreduce.Job$9",
+      "org.apache.hadoop.mapreduce.Job$JobState",
+      "org.apache.hadoop.mapreduce.Job$TaskStatusFilter",
+      "org.apache.hadoop.mapreduce.JobACL",
+      "org.apache.hadoop.mapreduce.JobContext",
+      "org.apache.hadoop.mapreduce.JobCounter",
+      "org.apache.hadoop.mapreduce.JobID",
+      "org.apache.hadoop.mapreduce.JobPriority",
+      "org.apache.hadoop.mapreduce.JobResourceUploader",
+      "org.apache.hadoop.mapreduce.JobResourceUploader$LimitChecker",
+      "org.apache.hadoop.mapreduce.JobStatus",
+      "org.apache.hadoop.mapreduce.JobStatus$1",
+      "org.apache.hadoop.mapreduce.JobStatus$State",
+      "org.apache.hadoop.mapreduce.JobSubmissionFiles",
+      "org.apache.hadoop.mapreduce.JobSubmitter",
+      "org.apache.hadoop.mapreduce.JobSubmitter$1",
+      "org.apache.hadoop.mapreduce.JobSubmitter$SplitComparator",
+      "org.apache.hadoop.mapreduce.MRJobConfig",
+      "org.apache.hadoop.mapreduce.MapContext",
+      "org.apache.hadoop.mapreduce.Mapper",
+      "org.apache.hadoop.mapreduce.Mapper$Context",
+      "org.apache.hadoop.mapreduce.MarkableIterator",
+      "org.apache.hadoop.mapreduce.MarkableIteratorInterface",
+      "org.apache.hadoop.mapreduce.OutputCommitter",
+      "org.apache.hadoop.mapreduce.OutputFormat",
+      "org.apache.hadoop.mapreduce.Partitioner",
+      "org.apache.hadoop.mapreduce.QueueAclsInfo",
+      "org.apache.hadoop.mapreduce.RecordWriter",
+      "org.apache.hadoop.mapreduce.ReduceContext",
+      "org.apache.hadoop.mapreduce.ReduceContext$ValueIterator",
+      "org.apache.hadoop.mapreduce.Reducer",
+      "org.apache.hadoop.mapreduce.Reducer$Context",
+      "org.apache.hadoop.mapreduce.checkpoint.CheckpointID",
+      "org.apache.hadoop.mapreduce.checkpoint.CheckpointNamingService",
+      "org.apache.hadoop.mapreduce.checkpoint.CheckpointService",
+      "org.apache.hadoop.mapreduce.checkpoint.CheckpointService$CheckpointReadChannel",
+      "org.apache.hadoop.mapreduce.checkpoint.CheckpointService$CheckpointWriteChannel",
+      "org.apache.hadoop.mapreduce.checkpoint.EnumCounter",
+      "org.apache.hadoop.mapreduce.checkpoint.FSCheckpointID",
+      "org.apache.hadoop.mapreduce.checkpoint.FSCheckpointService",
+      "org.apache.hadoop.mapreduce.checkpoint.FSCheckpointService$FSCheckpointReadChannel",
+      "org.apache.hadoop.mapreduce.checkpoint.FSCheckpointService$FSCheckpointWriteChannel"
+    ],
+    "num_classes": 55,
+    "description": "1. InputSplit, Job, Job$1, Job$10, Job$11, Job$12, Job$2, Job$3, Job$4, Job$5, Job$6, Job$7, Job$8, Job$9\n2. The provided code defines a set of classes that represent different components of the Apache Hadoop MapReduce framework. The InputSplit class represents the data to be processed by individual Mappers, while the Job class represents a job in the MapReduce framework and provides methods for configuring, submitting, and monitoring the execution of a job. The Job$1 class is a nested class of the Job class and provides additional functionality for job submission and monitoring. The remaining classes in the list are also nested classes of the Job class and provide additional functionality for job submission and monitoring.\n\nThe classes in this cluster are responsible for configuring, submitting, and monitoring MapReduce jobs. They interact with each other through the use of the Configuration class, which is used to configure the job, and the Cluster class, which is used to interact with the cluster and submit the job. The classes in this cluster use various design patterns such as the Factory pattern and the Singleton pattern to provide a flexible and scalable architecture for managing MapReduce jobs.\n\nThe InputSplit class plays a crucial role in the MapReduce framework by providing a byte-oriented view of the input data and the RecordReader of the job is responsible for processing this data and presenting a record-oriented view. The Job class provides a comprehensive API for configuring, submitting, and monitoring MapReduce jobs, and it is used by the InputFormat class to divide the input data into splits, which are then assigned to individual mappers.\n\nOverall, this cluster of classes plays a vital role in the Apache Hadoop MapReduce framework by providing a flexible and scalable architecture for managing MapReduce jobs."
+  },
+  "18": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.TaskInputOutputContext",
+      "org.apache.hadoop.mapreduce.counters.FrameworkCounterGroup",
+      "org.apache.hadoop.mapreduce.counters.FrameworkCounterGroup$1",
+      "org.apache.hadoop.mapreduce.counters.GenericCounter",
+      "org.apache.hadoop.mapreduce.counters.LimitExceededException",
+      "org.apache.hadoop.mapreduce.counters.Limits",
+      "org.apache.hadoop.mapreduce.jobhistory.AMStartedEvent",
+      "org.apache.hadoop.mapreduce.jobhistory.AvroArrayUtils",
+      "org.apache.hadoop.mapreduce.jobhistory.EventReader",
+      "org.apache.hadoop.mapreduce.jobhistory.EventReader$1",
+      "org.apache.hadoop.mapreduce.jobhistory.EventWriter",
+      "org.apache.hadoop.mapreduce.jobhistory.EventWriter$WriteMode",
+      "org.apache.hadoop.mapreduce.jobhistory.HistoryEvent",
+      "org.apache.hadoop.mapreduce.lib.fieldsel.FieldSelectionReducer",
+      "org.apache.hadoop.mapreduce.lib.input.CombineFileInputFormat",
+      "org.apache.hadoop.mapreduce.lib.input.CombineFileInputFormat$MultiPathFilter",
+      "org.apache.hadoop.mapreduce.lib.input.CombineFileInputFormat$OneBlockInfo",
+      "org.apache.hadoop.mapreduce.lib.input.CombineFileInputFormat$OneFileInfo",
+      "org.apache.hadoop.mapreduce.lib.input.CombineFileRecordReader",
+      "org.apache.hadoop.mapreduce.lib.join.OuterJoinRecordReader",
+      "org.apache.hadoop.mapreduce.lib.map.InverseMapper",
+      "org.apache.hadoop.mapreduce.lib.output.MultipleOutputs",
+      "org.apache.hadoop.mapreduce.lib.output.MultipleOutputs$RecordWriterWithCounter",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.ManifestCommitterSupport",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.ManifestCommitterSupport$AttemptDirectories",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.ManifestStoreOperations",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.ManifestStoreOperations$CommitFileResult",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.ManifestStoreOperationsThroughFileSystem",
+      "org.apache.hadoop.mapreduce.lib.partition.BinaryPartitioner"
+    ],
+    "num_classes": 29,
+    "description": "1. Semantic Summaries of Java Classes in Apache Hadoop MapReduce\n2. The semantic summaries of Java classes in Apache Hadoop MapReduce provide a high-level overview of the architectural design and functionality of the system. The classes in this cluster are responsible for managing input and output from tasks in a MapReduce job, as well as handling framework counters and ensuring compatibility between different counter implementations. The classes in this cluster use various design patterns, such as the context object pattern and the facade pattern, to provide a consistent and flexible interface for developers to work with. The components in this cluster interact with each other through well-defined interfaces and methods, allowing for easy integration and extensibility. The role of this cluster in the MapReduce system is to provide a robust and flexible framework for managing input, output, and counters in a distributed computing environment."
+  },
+  "26": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.TaskType",
+      "org.apache.hadoop.mapreduce.jobhistory.HistoryViewer",
+      "org.apache.hadoop.mapreduce.jobhistory.HistoryViewer$AnalyzedJob",
+      "org.apache.hadoop.mapreduce.jobhistory.HistoryViewer$FilteredJob",
+      "org.apache.hadoop.mapreduce.jobhistory.HistoryViewer$SummarizedJob",
+      "org.apache.hadoop.mapreduce.jobhistory.HistoryViewerPrinter",
+      "org.apache.hadoop.mapreduce.jobhistory.HumanReadableHistoryViewerPrinter",
+      "org.apache.hadoop.mapreduce.jobhistory.HumanReadableHistoryViewerPrinter$1",
+      "org.apache.hadoop.mapreduce.jobhistory.HumanReadableHistoryViewerPrinter$2",
+      "org.apache.hadoop.mapreduce.jobhistory.HumanReadableHistoryViewerPrinter$3",
+      "org.apache.hadoop.mapreduce.jobhistory.HumanReadableHistoryViewerPrinter$4",
+      "org.apache.hadoop.mapreduce.jobhistory.HumanReadableHistoryViewerPrinter$5",
+      "org.apache.hadoop.mapreduce.jobhistory.JSONHistoryViewerPrinter",
+      "org.apache.hadoop.mapreduce.jobhistory.JobFinishedEvent",
+      "org.apache.hadoop.mapreduce.jobhistory.JobHistoryParser",
+      "org.apache.hadoop.mapreduce.jobhistory.JobHistoryParser$1",
+      "org.apache.hadoop.mapreduce.jobhistory.JobHistoryParser$AMInfo",
+      "org.apache.hadoop.mapreduce.jobhistory.JobHistoryParser$JobInfo",
+      "org.apache.hadoop.mapreduce.jobhistory.JobHistoryParser$TaskAttemptInfo",
+      "org.apache.hadoop.mapreduce.jobhistory.JobHistoryParser$TaskInfo",
+      "org.apache.hadoop.mapreduce.jobhistory.JobInfoChangeEvent",
+      "org.apache.hadoop.mapreduce.jobhistory.JobInitedEvent",
+      "org.apache.hadoop.mapreduce.jobhistory.JobPriorityChangeEvent",
+      "org.apache.hadoop.mapreduce.jobhistory.JobQueueChangeEvent",
+      "org.apache.hadoop.mapreduce.jobhistory.JobStatusChangedEvent",
+      "org.apache.hadoop.mapreduce.jobhistory.JobSubmittedEvent",
+      "org.apache.hadoop.mapreduce.jobhistory.TaskAttemptFinishedEvent",
+      "org.apache.hadoop.mapreduce.jobhistory.TaskAttemptStartedEvent",
+      "org.apache.hadoop.mapreduce.jobhistory.TaskAttemptUnsuccessfulCompletionEvent",
+      "org.apache.hadoop.mapreduce.jobhistory.TaskFailedEvent",
+      "org.apache.hadoop.mapreduce.jobhistory.TaskFinishedEvent",
+      "org.apache.hadoop.mapreduce.jobhistory.TaskStartedEvent",
+      "org.apache.hadoop.mapreduce.jobhistory.TaskUpdatedEvent",
+      "org.apache.hadoop.mapreduce.lib.aggregate.DoubleValueSum",
+      "org.apache.hadoop.mapreduce.lib.aggregate.LongValueMax",
+      "org.apache.hadoop.mapreduce.lib.aggregate.LongValueMin",
+      "org.apache.hadoop.mapreduce.lib.aggregate.LongValueSum"
+    ],
+    "num_classes": 37,
+    "description": "1. Cluster 26: MapReduce Task Classification\n2. This cluster represents a classification of different types of tasks in a MapReduce job. It includes an enumeration called `TaskType` with five possible values: `MAP`, `REDUCE`, `JOB_SETUP`, `JOB_CLEANUP`, and `TASK_CLEANUP`. These values represent specific types of tasks, such as map tasks, reduce tasks, job setup tasks, job cleanup tasks, and task cleanup tasks. The `TaskType` enumeration is used to classify different types of tasks in a MapReduce job. The code also includes a license notice and import statements for other classes and packages. The `InterfaceAudience` and `InterfaceStability` annotations indicate the intended audience and stability level of the code."
+  },
+  "16": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.checkpoint.RandomNameCNS",
+      "org.apache.hadoop.mapreduce.checkpoint.SimpleNamingService",
+      "org.apache.hadoop.mapreduce.checkpoint.TaskCheckpointID",
+      "org.apache.hadoop.mapreduce.counters.AbstractCounter",
+      "org.apache.hadoop.mapreduce.counters.AbstractCounterGroup",
+      "org.apache.hadoop.mapreduce.counters.AbstractCounters",
+      "org.apache.hadoop.mapreduce.counters.AbstractCounters$1",
+      "org.apache.hadoop.mapreduce.counters.AbstractCounters$GroupType",
+      "org.apache.hadoop.mapreduce.counters.CounterGroupBase",
+      "org.apache.hadoop.mapreduce.counters.CounterGroupFactory",
+      "org.apache.hadoop.mapreduce.counters.CounterGroupFactory$FrameworkGroupFactory",
+      "org.apache.hadoop.mapreduce.counters.FileSystemCounterGroup",
+      "org.apache.hadoop.mapreduce.counters.FileSystemCounterGroup$1",
+      "org.apache.hadoop.mapreduce.counters.FileSystemCounterGroup$FSCounter",
+      "org.apache.hadoop.mapreduce.counters.FrameworkCounterGroup$FrameworkCounter"
+    ],
+    "num_classes": 15,
+    "description": "1. RandomNameCNS, SimpleNamingService, TaskCheckpointID: Random checkpoint name generation, checkpoint name generation based on a prefix, checkpoint management for MapReduce tasks.\n\n2. These classes are part of the same architectural cluster in Apache Hadoop MapReduce. They are used to generate and manage checkpoint names in a distributed computing environment. The RandomNameCNS class generates random checkpoint names using the RandomStringUtils.randomAlphanumeric(8) method, while the SimpleNamingService class generates checkpoint names by appending the prefix \"checkpoint_\" to the name parameter passed to the constructor. The TaskCheckpointID class provides functionality for managing checkpoints in a distributed computing environment, including methods for writing and reading checkpoint data, as well as methods for retrieving information about the checkpoint, such as its size and the time it took to create it.\n\nThe classes use the Apache Commons Lang library for generating random strings and the org.apache.hadoop.mapred.Counters class for managing counters. The classes also have dependencies on other classes and packages, such as org.apache.hadoop.fs.Path for file system operations and org.apache.hadoop.io.Text for data serialization.\n\nOverall, these classes play a crucial role in managing checkpoints in a distributed computing environment, ensuring that MapReduce tasks can reliably recover from failures and continue processing data."
+  },
+  "12": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.filecache.ClientDistributedCacheManager",
+      "org.apache.hadoop.mapreduce.filecache.DistributedCache",
+      "org.apache.hadoop.mapreduce.server.tasktracker.TTConfig",
+      "org.apache.hadoop.mapreduce.split.JobSplit",
+      "org.apache.hadoop.mapreduce.split.JobSplit$SplitMetaInfo",
+      "org.apache.hadoop.mapreduce.split.JobSplit$TaskSplitIndex",
+      "org.apache.hadoop.mapreduce.split.JobSplit$TaskSplitMetaInfo",
+      "org.apache.hadoop.mapreduce.split.JobSplitWriter",
+      "org.apache.hadoop.mapreduce.split.SplitMetaInfoReader",
+      "org.apache.hadoop.mapreduce.task.JobContextImpl"
+    ],
+    "num_classes": 10,
+    "description": "1. Apache Hadoop MapReduce: ClientDistributedCacheManager, DistributedCache, TTConfig, JobSplit, JobSplit$SplitMetaInfo, JobSplit$TaskSplitIndex, JobSplit$TaskSplitMetaInfo, JobSplitWriter, SplitMetaInfoReader\n2. The Apache Hadoop MapReduce system is a distributed processing framework that allows for the processing of large data sets across clusters of computers. The system is composed of several components, including the ClientDistributedCacheManager, DistributedCache, TTConfig, JobSplit, JobSplit$SplitMetaInfo, JobSplit$TaskSplitIndex, JobSplit$TaskSplitMetaInfo, JobSplitWriter, and SplitMetaInfoReader. The ClientDistributedCacheManager is responsible for managing the internal configuration of the cache by the client for job submission. The DistributedCache provides functionality to cache files needed by applications. The TTConfig defines a set of configuration properties for the MapReduce server. The JobSplit classes are responsible for reading and writing splits for MapReduce jobs. The JobSplit$SplitMetaInfo class represents the meta information about the task split, while the JobSplit$TaskSplitIndex and JobSplit$TaskSplitMetaInfo classes represent the meta information about the task split that the JobTracker creates. The JobSplitWriter is used to write splits for MapReduce jobs, and the SplitMetaInfoReader is a utility that reads split metadata information and creates split metadata objects. These components work together to distribute tasks across different nodes in a Hadoop cluster and ensure the proper functioning of MapReduce jobs."
+  },
+  "5": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.AMStarted",
+      "org.apache.hadoop.mapreduce.jobhistory.AMStarted$Builder"
+    ],
+    "num_classes": 2,
+    "description": "1. Architectural Title: MapReduce Cluster 5: AMStarted and AMStarted$Builder\n\n2. High-level descriptive summary:\n\nThe AMStarted and AMStarted$Builder classes belong to Cluster 5 in Apache Hadoop MapReduce. These classes are responsible for handling the initialization and startup of the Application Master (AM) in the MapReduce system. The AM is the central component of the MapReduce framework, responsible for coordinating the execution of tasks and managing the resources of the cluster.\n\nThe AMStarted class represents the state of the Application Master when it has started. It contains information about the application ID, the application attempt ID, the user, the start time, and the node manager host and port. The AMStarted$Builder class provides a builder pattern for creating instances of the AMStarted class.\n\nThe interaction between these classes and other components in the MapReduce system is as follows:\n\n- The AMStarted class is created and initialized when the Application Master starts.\n- The AMStarted$Builder class is used to create instances of the AMStarted class.\n- The AMStarted class is passed as a parameter to other methods or classes that need to access the information about the Application Master's startup state.\n\nThe role of this cluster in the MapReduce system is to manage the initialization and startup of the Application Master, which is a critical component for the successful execution of MapReduce jobs. The use of the builder pattern in the AMStarted$Builder class demonstrates the use of the Builder design pattern, which is a creational design pattern that allows for the creation of complex objects in a flexible and modular way."
+  },
+  "7": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.Event",
+      "org.apache.hadoop.mapreduce.jobhistory.Event$Builder"
+    ],
+    "num_classes": 2,
+    "description": "Title: MapReduce Event System\n\nThe MapReduce Event System is responsible for handling events within the MapReduce framework. It provides a centralized event handling mechanism that allows components to communicate with each other in a decoupled manner. The system uses a publish-subscribe model, where events are published to specific topics, and interested components subscribe to those topics to receive notifications.\n\nThe Event$Builder class is used to construct event objects, which are then published to the event bus. The Event class represents the actual event data, containing information about the event such as its type, source, and timestamp.\n\nThe use of the Event System in MapReduce allows for a more modular and extensible architecture, as components can easily communicate with each other without being tightly coupled. This promotes code reuse and makes it easier to maintain and evolve the system over time.\n\nThe Event System also plays a crucial role in the fault-tolerance mechanism of MapReduce. By allowing components to subscribe to specific events, the system can react to failures and errors in a timely and coordinated manner, ensuring that the overall MapReduce job remains stable and reliable."
+  },
+  "49": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.EventType"
+    ],
+    "num_classes": 1,
+    "description": "Title: Event Handling in Hadoop MapReduce\n\nThis architectural cluster is responsible for handling events in the Hadoop MapReduce system. It utilizes the Observer pattern, where different components subscribe to specific events and react accordingly. The components in this cluster include the JobTracker, TaskTracker, and the JobHistoryServer.\n\nThe JobTracker is the central component that coordinates the entire MapReduce job. It receives job submissions, schedules tasks, and monitors job progress. The TaskTracker, on the other hand, is responsible for executing the tasks assigned by the JobTracker. It reports task status updates back to the JobTracker and also handles task failures.\n\nThe JobHistoryServer plays a crucial role in storing and retrieving job history data. It collects information about completed jobs, such as job start and end times, task completion status, and task counters. This information is used for monitoring and debugging purposes.\n\nThe components in this cluster communicate with each other using event notifications. For example, when a job is submitted, the JobTracker notifies the TaskTracker to start processing the tasks. Similarly, when a task fails, the TaskTracker notifies the JobTracker to take corrective action.\n\nIn summary, this architectural cluster is responsible for handling events in the Hadoop MapReduce system, coordinating job execution, monitoring task progress, and storing job history data. It utilizes the Observer pattern and communication between components to ensure the smooth functioning of the MapReduce system."
+  },
+  "22": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.Events",
+      "org.apache.hadoop.mapreduce.jobhistory.Events$Callback"
+    ],
+    "num_classes": 2,
+    "description": "1. Architectural Title: MapReduce Cluster 22 - File Handling and Callbacks\n2. High-level descriptive summary:\n\nThe MapReduce Cluster 22 is responsible for handling file operations and managing callbacks in the Apache Hadoop MapReduce system. It consists of two classes, Events and Events$Callback, which are used to handle file-related events and execute callback functions. The Events class is responsible for handling file not found errors, while the Events$Callback class is used to execute callback functions when specific events occur.\n\nThe architecture of this cluster follows the observer pattern, where the Events class acts as the subject and the callback functions are the observers. When a file not found error occurs, the Events class notifies the callback functions, which can then take appropriate action. This allows for modular and extensible code, as new callback functions can be added without modifying the core file handling logic.\n\nThe components in this cluster interact with each other through the Events class, which acts as a central event bus. This allows for loose coupling between components, as they do not need to know about each other's existence.\n\nThe role of this cluster in the MapReduce system is to handle file operations and manage callbacks, which are essential for processing large amounts of data efficiently. By using the observer pattern and loose coupling, this cluster ensures that the system is flexible and can be easily extended to handle new file-related events and callback functions."
+  },
+  "17": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.HistoryEventHandler",
+      "org.apache.hadoop.mapreduce.jobhistory.JobUnsuccessfulCompletionEvent",
+      "org.apache.hadoop.mapreduce.jobhistory.MapAttemptFinishedEvent",
+      "org.apache.hadoop.mapreduce.lib.aggregate.StringValueMax",
+      "org.apache.hadoop.mapreduce.lib.aggregate.StringValueMin",
+      "org.apache.hadoop.mapreduce.lib.aggregate.UniqValueCount",
+      "org.apache.hadoop.mapreduce.lib.aggregate.UserDefinedValueAggregatorDescriptor"
+    ],
+    "num_classes": 7,
+    "description": "1. Cluster 17: HistoryEventHandler, JobUnsuccessfulCompletionEvent, MapAttemptFinishedEvent, StringValueMax, StringValueMin, UniqValueCount, UserDefinedValueAggregatorDescriptor\n2. This cluster is responsible for handling history events in the Hadoop MapReduce framework. It includes classes for handling job completion events, map attempt completion events, and value aggregators for maintaining maximum and minimum string values, deduplicating sequences of objects, and creating user-defined value aggregator descriptors. The components in this cluster interact with each other by calling methods and passing data objects. The cluster plays a crucial role in managing and processing history events within the MapReduce system."
+  },
+  "21": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.JhCounter",
+      "org.apache.hadoop.mapreduce.jobhistory.JhCounter$Builder"
+    ],
+    "num_classes": 2,
+    "description": "1. Architectural Title: MapReduce Counter Handling\n\n2. High-level descriptive summary:\nThe MapReduce Counter Handling cluster is responsible for managing and tracking the progress of MapReduce jobs. It includes classes such as JhCounter and JhCounter$Builder, which are used to build and manage counter objects. The JhCounter class provides methods for incrementing and decrementing counter values, while the JhCounter$Builder class is used to create new counter objects with specified names and descriptions.\n\nThe cluster follows a modular design, with each class performing a specific role in counter management. The JhCounter class encapsulates the logic for managing counter values, while the JhCounter$Builder class provides a convenient way to create new counter objects.\n\nThe components in this cluster interact with each other through method calls and object references. When a MapReduce job is executed, the counter objects are created and managed by the JhCounter and JhCounter$Builder classes, which are then used to track the progress of the job.\n\nThe MapReduce Counter Handling cluster plays a crucial role in ensuring the efficient and accurate tracking of job progress, which is essential for effective resource management and job optimization in the MapReduce system."
+  },
+  "20": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.JhCounterGroup",
+      "org.apache.hadoop.mapreduce.jobhistory.JhCounterGroup$Builder"
+    ],
+    "num_classes": 2,
+    "description": "1. \"MapReduce Counter Group\"\n2. The MapReduce Counter Group cluster is responsible for managing and tracking the progress of various tasks within the MapReduce framework. It provides a way to incrementally count the number of occurrences of specific events or metrics during the execution of MapReduce jobs. The cluster consists of two classes, JhCounterGroup and JhCounterGroup$Builder, which together provide a flexible and extensible API for defining and manipulating counter groups and their associated counters. The JhCounterGroup class represents a group of counters, while the JhCounterGroup$Builder class provides a convenient way to create and configure counter groups. The cluster follows the principles of object-oriented design, with the JhCounterGroup class serving as a container for related counters and the JhCounterGroup$Builder class providing a fluent interface for building and configuring counter groups. The cluster interacts with other components in the MapReduce system through the use of APIs and interfaces, allowing for seamless integration and communication between different parts of the system. Overall, the MapReduce Counter Group cluster plays a crucial role in monitoring and managing the progress of MapReduce jobs, providing a powerful and flexible tool for tracking and analyzing job performance."
+  },
+  "9": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.JhCounters",
+      "org.apache.hadoop.mapreduce.jobhistory.JhCounters$Builder"
+    ],
+    "num_classes": 2,
+    "description": "1. Architectural Title: MapReduce Counter Handling\n2. High-level descriptive summary:\n\nThe MapReduce Counter Handling cluster is responsible for managing and tracking the progress of MapReduce jobs. It consists of the JhCounters class and its Builder class. The JhCounters class provides methods for incrementing and decrementing counters, as well as retrieving counter values. The Builder class is used to create instances of JhCounters. The cluster follows the Singleton design pattern, ensuring that only one instance of JhCounters is created throughout the system. The components in this cluster communicate through method calls, passing counter values and other necessary information. The role of this cluster is to provide a centralized and efficient way to track the progress of MapReduce jobs, allowing users to monitor and optimize job performance."
+  },
+  "3": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.JobFinished",
+      "org.apache.hadoop.mapreduce.jobhistory.JobFinished$Builder"
+    ],
+    "num_classes": 2,
+    "description": "Architectural Title: MapReduce Job Finished Event Builder\n\nHigh-Level Descriptive Summary:\nThe MapReduce Job Finished Event Builder is responsible for constructing and building the JobFinished event in the Apache Hadoop MapReduce system. This event is generated when a job has completed its execution. The JobFinished event contains information about the job's completion status, such as whether it was successful or not, and any relevant error messages.\n\nThe Builder class is designed to be used in a fluent interface style, allowing developers to easily chain method calls together to build the JobFinished event. This is achieved through the use of method chaining, where each method call returns the Builder object itself, allowing for method calls to be nested and executed in sequence.\n\nThe Builder class is part of the Builder pattern, which is a creational design pattern that provides a flexible and efficient way to construct complex objects. By using the Builder pattern, the JobFinished event can be constructed in a step-by-step manner, with each step building upon the previous one.\n\nThe Builder class is designed to be thread-safe, meaning that it can be used concurrently by multiple threads without causing any race conditions or data corruption. This is achieved through the use of synchronization mechanisms to ensure that only one thread can access the Builder object at a time.\n\nOverall, the MapReduce Job Finished Event Builder plays a crucial role in the Apache Hadoop MapReduce system by providing a flexible and efficient way to construct the JobFinished event, which contains important information about the completion status of a job."
+  },
+  "24": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.JobInfoChange"
+    ],
+    "num_classes": 1,
+    "description": "Title: MapReduce Job Information Change\n\nThis cluster is responsible for handling changes in job information within the MapReduce system. It uses various design patterns such as the Observer pattern to notify interested parties about the changes. The components within this cluster include the JobInfoChange class, which is responsible for storing and managing the job information, and the ChangeEvent class, which represents the event that triggers the change.\n\nThe components in this cluster interact with each other through the JobInfoChange class, which acts as the subject in the Observer pattern. When a change event occurs, the JobInfoChange class notifies all its registered observers, which can then take appropriate action.\n\nThe role of this cluster is to ensure that any changes to job information are properly handled and communicated throughout the MapReduce system. It plays a crucial role in maintaining the integrity and consistency of the job information, which is essential for the proper functioning of the MapReduce system."
+  },
+  "36": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.JobInfoChange$Builder"
+    ],
+    "num_classes": 1,
+    "description": "Title: MapReduce Job Information Change Builder\n\nThis cluster is responsible for building and managing the information about changes in MapReduce jobs. It uses the Builder pattern to create instances of the JobInfoChange class, which encapsulates the details of the job changes. The components within this cluster interact with each other through well-defined interfaces and collaborate to ensure that the job information is accurately captured and processed. The cluster plays a crucial role in the MapReduce system by providing a structured and organized approach to handling job information changes."
+  },
+  "48": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.JobInited"
+    ],
+    "num_classes": 1,
+    "description": "Title: MapReduce Cluster 48: Job Initialization and Management\n\n1. High-level descriptive summary:\n\nThe MapReduce Cluster 48 is responsible for the initialization and management of jobs in the Hadoop MapReduce system. It includes classes that handle the setup and configuration of job tasks, as well as the communication and coordination between different components of the system.\n\nThe architecture of this cluster follows the principles of distributed computing, with components communicate through a centralized job tracker and task trackers. The design patterns used include the use of event-driven programming and the separation of concerns between different components.\n\nThe components of this cluster interact with each other to ensure the successful execution of jobs. The job tracker is responsible for assigning tasks to task trackers, monitoring their progress, and handling failures. The task trackers execute the tasks and report their status back to the job tracker.\n\nThe role of this cluster in the MapReduce system is critical, as it ensures that jobs are properly initialized and executed, with minimal downtime or errors. It is also responsible for optimizing the performance of the system by managing the resources and load balancing across different nodes."
+  },
+  "39": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.JobInited$Builder"
+    ],
+    "num_classes": 1,
+    "description": "Title: MapReduce Cluster 39: Job Initialization and Configuration\n\nThis cluster is responsible for the initialization and configuration of MapReduce jobs. It includes classes such as JobInited$Builder, which is used to build job initialization objects. The cluster follows the Builder pattern, which allows for a flexible and efficient way to create job initialization objects. The components in this cluster interact with each other to ensure that the job is properly initialized and configured before execution. The cluster plays a crucial role in the MapReduce system by ensuring that jobs are set up correctly and that their dependencies are resolved."
+  },
+  "47": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.JobPriorityChange"
+    ],
+    "num_classes": 1,
+    "description": "Architectural Title: MapReduce Job Priority Management\n\nHigh-level descriptive summary:\nThe MapReduce Job Priority Management cluster is responsible for handling the prioritization of MapReduce jobs within the system. It includes classes that manage job priorities, such as JobPriorityChange, which notifies the system of changes in job priority. The cluster utilizes design patterns such as the Observer pattern to notify relevant components of priority changes. The components within this cluster interact with each other to ensure that job priorities are properly managed and that the system can efficiently process jobs based on their priority levels. This cluster plays a crucial role in ensuring that high-priority jobs are processed promptly and that resources are allocated appropriately based on job priority."
+  },
+  "37": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.JobPriorityChange$Builder"
+    ],
+    "num_classes": 1,
+    "description": "Title: Job Priority Change Builder\n\nThis cluster is responsible for handling job priority changes in the MapReduce system. It uses the Builder pattern to create immutable objects, which ensures thread-safety and simplifies the code. The components in this cluster interact with each other through a well-defined interface, allowing for easy integration and extensibility. The cluster plays a crucial role in managing the priority of jobs in the system, ensuring that high-priority jobs are executed promptly and efficiently."
+  },
+  "46": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.JobQueueChange"
+    ],
+    "num_classes": 1,
+    "description": "1. Architectural Title: MapReduce Job Queue Management\n\n2. High-level descriptive summary:\nThe MapReduce Job Queue Management cluster is responsible for handling the submission, scheduling, and execution of MapReduce jobs in the Hadoop ecosystem. It utilizes a distributed queuing system to manage job submissions and ensure fair resource allocation across different users and job priorities. The cluster incorporates design patterns such as the Singleton pattern to ensure a single instance of the queue manager. Components within the cluster communicate through a centralized job tracker, which coordinates the allocation of resources and task execution across the cluster. The cluster plays a crucial role in ensuring efficient and reliable processing of large-scale data processing tasks in the Hadoop MapReduce framework."
+  },
+  "35": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.JobQueueChange$Builder"
+    ],
+    "num_classes": 1,
+    "description": "1. Architectural Title: \"MapReduce Job Queue Management\"\n\n2. High-level descriptive summary:\nThe MapReduce Job Queue Management cluster is responsible for handling the submission, tracking, and execution of MapReduce jobs within the Hadoop framework. It provides a centralized queueing system that allows users to submit jobs to different job queues based on their priority and resource requirements. The cluster utilizes a combination of design patterns such as the Builder pattern and the Singleton pattern to manage job queues efficiently. The components within this cluster, including the JobQueueChange$Builder, interact with each other to ensure smooth job submission, tracking, and execution. The cluster plays a crucial role in ensuring the efficient and effective processing of MapReduce jobs within the Hadoop ecosystem."
+  },
+  "45": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.JobStatusChanged"
+    ],
+    "num_classes": 1,
+    "description": "1. Architectural Title: MapReduce Job Status Management\n\n2. High-level descriptive summary:\nThe MapReduce Job Status Management cluster is responsible for tracking and managing the status of MapReduce jobs in the Apache Hadoop ecosystem. It provides a centralized mechanism for monitoring job progress, handling job failures, and reporting job completion status. The cluster utilizes a combination of design patterns such as the observer pattern and the facade pattern to ensure seamless communication between different components of the MapReduce system. The components within this cluster interact with each other through a well-defined interface, allowing for efficient and effective job status monitoring and management. The cluster plays a crucial role in ensuring the reliability and efficiency of MapReduce jobs by providing real-time insights into job progress and status."
+  },
+  "23": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.JobStatusChanged$Builder"
+    ],
+    "num_classes": 1,
+    "description": "1. Architectural Title: MapReduce Job Status Management\n\n2. High-level descriptive summary:\nThe MapReduce Job Status Management cluster is responsible for handling the status changes of MapReduce jobs. It includes a class called JobStatusChanged$Builder, which is used to build instances of the JobStatusChanged class. The cluster utilizes the Builder pattern to create immutable instances of the JobStatusChanged class, which represent the status changes of a MapReduce job. The Builder class provides methods to set the status, start time, end time, and job ID of the job. The cluster also includes other classes such as JobStatusChanged, JobStatusChanged$1, and JobStatusChanged$Builder, which are used to manage the status changes of MapReduce jobs. The components in this cluster interact with each other through method calls and data exchanges, ensuring that the status changes of MapReduce jobs are properly tracked and managed. The cluster plays a crucial role in the MapReduce system by providing a reliable and efficient mechanism for managing the status changes of MapReduce jobs."
+  },
+  "44": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.JobSubmitted"
+    ],
+    "num_classes": 1,
+    "description": "Title: MapReduce Cluster for Data Processing\n\nThis cluster is responsible for processing and managing data within the Apache Hadoop MapReduce framework. It utilizes various design patterns such as the MapReduce pattern, which breaks down large data processing tasks into smaller, more manageable tasks that can be executed in parallel. The components within this cluster communicate with each other using a distributed communication system, ensuring efficient and scalable data processing. The cluster plays a crucial role in handling large-scale data processing tasks, providing fault-tolerance and ensuring the integrity of the processed data."
+  },
+  "27": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.JobSubmitted$Builder"
+    ],
+    "num_classes": 1,
+    "description": "Title: MapReduce Job Submission Process\n\nThe MapReduce system is responsible for processing large-scale data sets using a distributed computing framework. The JobSubmission$Builder class is part of the MapReduce architecture and is responsible for building job submissions. It interacts with other components in the system, such as the JobTracker and TaskTrackers, to manage and execute jobs. The Builder class uses various design patterns, such as the Builder pattern, to create job submissions with specific configurations and settings. The overall behavior of this cluster is to manage and coordinate the submission, execution, and completion of MapReduce jobs. The architecture and design patterns used in this cluster are focused on scalability, fault tolerance, and efficient resource utilization. The components in this cluster work together to ensure that jobs are executed correctly and efficiently, and that the system as a whole can handle large-scale data processing tasks. The role of this cluster in the MapReduce system is to provide a robust and efficient mechanism for submitting and executing MapReduce jobs in a distributed computing environment."
+  },
+  "43": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.JobUnsuccessfulCompletion"
+    ],
+    "num_classes": 1,
+    "description": "Title: MapReduce Job Failure Handling\n\nMapReduce is a distributed computing framework used for processing large data sets. Cluster 43 in Apache Hadoop MapReduce handles job unsuccessful completion, which occurs when a job fails to complete successfully. This cluster is responsible for managing and coordinating the failure handling process for MapReduce jobs.\n\nThe architecture of this cluster follows the principles of fault-tolerance and reliability. It uses the Hadoop Distributed File System (HDFS) to store data and the YARN (Yet Another Resource Negotiator) resource manager to manage resources across the cluster. The components in this cluster include the JobTracker, which coordinates and schedules jobs across the cluster, and the TaskTrackers, which execute the tasks for each job.\n\nWhen a job fails, the JobTracker detects the failure and initiates the failure handling process. This involves assigning new tasks to the remaining healthy TaskTrackers and retrying the failed tasks. If the failure is permanent, the JobTracker marks the job as failed and notifies the client.\n\nThe interaction between the components in this cluster is critical for ensuring the reliability and fault-tolerance of the MapReduce system. The JobTracker coordinates the failure handling process and ensures that tasks are assigned to healthy TaskTrackers, while the TaskTrackers execute the tasks and report their status to the JobTracker.\n\nIn summary, Cluster 43 in Apache Hadoop MapReduce is responsible for handling job unsuccessful completion by managing the failure handling process and ensuring the reliability and fault-tolerance of the MapReduce system."
+  },
+  "30": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.JobUnsuccessfulCompletion$Builder"
+    ],
+    "num_classes": 1,
+    "description": "Title: MapReduce Job Unsuccessful Completion\n\nThis cluster is responsible for handling unsuccessful job completions in Apache Hadoop MapReduce. It utilizes the Builder pattern to construct instances of the JobUnsuccessfulCompletion class. The components within this cluster interact with each other to provide error handling and logging functionality. The role of this cluster is to ensure that any unsuccessful job completions are properly logged and handled, allowing for debugging and analysis in case of job failures."
+  },
+  "10": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.MapAttemptFinished",
+      "org.apache.hadoop.mapreduce.jobhistory.MapAttemptFinished$Builder"
+    ],
+    "num_classes": 2,
+    "description": "1. Architectural Title: MapReduce Map Attempt Finishing Process\n2. High-level descriptive summary:\nThe MapReduce Map Attempt Finishing Process is responsible for handling the completion of map tasks in the Hadoop MapReduce framework. It consists of two main classes, MapAttemptFinished and MapAttemptFinished$Builder, which are used to build and manage the finishing process of map attempts.\n\nThe MapAttemptFinished class represents the completion of a map task and contains information about the status, counters, and other relevant details of the task. The MapAttemptFinished$Builder class is used to create instances of MapAttemptFinished and provides methods for setting the various attributes of the map attempt finishing event.\n\nThe classes in this cluster follow the Builder pattern, which allows for flexibility and ease of use when creating instances of MapAttemptFinished. The Builder pattern also enables the separation of the construction of the object from its representation, making the code more modular and easier to maintain.\n\nThe MapReduce Map Attempt Finishing Process plays a crucial role in the overall MapReduce system by ensuring that map tasks are properly completed and their results are processed and stored appropriately. It is an essential component of the Hadoop ecosystem and is responsible for the efficient and reliable processing of large-scale data sets."
+  },
+  "8": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.NormalizedResourceEvent",
+      "org.apache.hadoop.mapreduce.jobhistory.ReduceAttemptFinishedEvent",
+      "org.apache.hadoop.mapreduce.lib.db.OracleDataDrivenDBRecordReader",
+      "org.apache.hadoop.mapreduce.lib.db.OracleDateSplitter",
+      "org.apache.hadoop.mapreduce.lib.db.TextSplitter",
+      "org.apache.hadoop.mapreduce.lib.fieldsel.FieldSelectionHelper",
+      "org.apache.hadoop.mapreduce.lib.fieldsel.FieldSelectionMapper",
+      "org.apache.hadoop.mapreduce.lib.input.CombineFileRecordReaderWrapper",
+      "org.apache.hadoop.mapreduce.lib.input.CombineFileSplit",
+      "org.apache.hadoop.mapreduce.lib.input.CombineSequenceFileInputFormat",
+      "org.apache.hadoop.mapreduce.lib.input.CombineSequenceFileInputFormat$SequenceFileRecordReaderWrapper",
+      "org.apache.hadoop.mapreduce.lib.input.CombineTextInputFormat",
+      "org.apache.hadoop.mapreduce.lib.input.CombineTextInputFormat$TextRecordReaderWrapper",
+      "org.apache.hadoop.mapreduce.lib.input.CompressedSplitLineReader",
+      "org.apache.hadoop.mapreduce.lib.input.DelegatingInputFormat",
+      "org.apache.hadoop.mapreduce.lib.input.DelegatingMapper",
+      "org.apache.hadoop.mapreduce.lib.input.DelegatingRecordReader",
+      "org.apache.hadoop.mapreduce.lib.input.FileInputFormat",
+      "org.apache.hadoop.mapreduce.lib.input.FileInputFormat$1",
+      "org.apache.hadoop.mapreduce.lib.input.FileInputFormat$Counter",
+      "org.apache.hadoop.mapreduce.lib.input.FileInputFormat$MultiPathFilter",
+      "org.apache.hadoop.mapreduce.lib.input.FileSplit",
+      "org.apache.hadoop.mapreduce.lib.input.FixedLengthInputFormat",
+      "org.apache.hadoop.mapreduce.lib.input.FixedLengthRecordReader",
+      "org.apache.hadoop.mapreduce.lib.input.InvalidInputException",
+      "org.apache.hadoop.mapreduce.lib.input.KeyValueLineRecordReader",
+      "org.apache.hadoop.mapreduce.lib.input.KeyValueTextInputFormat",
+      "org.apache.hadoop.mapreduce.lib.input.LineRecordReader",
+      "org.apache.hadoop.mapreduce.lib.input.MultipleInputs",
+      "org.apache.hadoop.mapreduce.lib.input.NLineInputFormat",
+      "org.apache.hadoop.mapreduce.lib.input.SequenceFileAsBinaryInputFormat",
+      "org.apache.hadoop.mapreduce.lib.input.SequenceFileAsBinaryInputFormat$SequenceFileAsBinaryRecordReader",
+      "org.apache.hadoop.mapreduce.lib.input.SequenceFileAsTextInputFormat",
+      "org.apache.hadoop.mapreduce.lib.input.SequenceFileAsTextRecordReader",
+      "org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFilter",
+      "org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFilter$Filter",
+      "org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFilter$FilterBase",
+      "org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFilter$FilterRecordReader",
+      "org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFilter$MD5Filter",
+      "org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFilter$PercentFilter",
+      "org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFilter$RegexFilter",
+      "org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat",
+      "org.apache.hadoop.mapreduce.lib.input.SequenceFileRecordReader",
+      "org.apache.hadoop.mapreduce.lib.input.SplitLineReader",
+      "org.apache.hadoop.mapreduce.lib.input.TaggedInputSplit",
+      "org.apache.hadoop.mapreduce.lib.input.TextInputFormat",
+      "org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader",
+      "org.apache.hadoop.mapreduce.lib.jobcontrol.ControlledJob",
+      "org.apache.hadoop.mapreduce.lib.jobcontrol.ControlledJob$State",
+      "org.apache.hadoop.mapreduce.lib.jobcontrol.JobControl",
+      "org.apache.hadoop.mapreduce.lib.jobcontrol.JobControl$1",
+      "org.apache.hadoop.mapreduce.lib.jobcontrol.JobControl$ThreadState",
+      "org.apache.hadoop.mapreduce.lib.join.ArrayListBackedIterator",
+      "org.apache.hadoop.mapreduce.lib.join.ComposableInputFormat",
+      "org.apache.hadoop.mapreduce.lib.join.ComposableRecordReader",
+      "org.apache.hadoop.mapreduce.lib.join.CompositeInputFormat",
+      "org.apache.hadoop.mapreduce.lib.join.CompositeInputSplit",
+      "org.apache.hadoop.mapreduce.lib.join.CompositeRecordReader",
+      "org.apache.hadoop.mapreduce.lib.join.CompositeRecordReader$1",
+      "org.apache.hadoop.mapreduce.lib.join.CompositeRecordReader$2",
+      "org.apache.hadoop.mapreduce.lib.join.CompositeRecordReader$JoinCollector",
+      "org.apache.hadoop.mapreduce.lib.join.InnerJoinRecordReader",
+      "org.apache.hadoop.mapreduce.lib.join.JoinRecordReader",
+      "org.apache.hadoop.mapreduce.lib.join.JoinRecordReader$JoinDelegationIterator",
+      "org.apache.hadoop.mapreduce.lib.join.MultiFilterRecordReader",
+      "org.apache.hadoop.mapreduce.lib.join.MultiFilterRecordReader$MultiFilterDelegationIterator",
+      "org.apache.hadoop.mapreduce.lib.join.OverrideRecordReader",
+      "org.apache.hadoop.mapreduce.lib.join.Parser",
+      "org.apache.hadoop.mapreduce.lib.join.Parser$CNode",
+      "org.apache.hadoop.mapreduce.lib.join.Parser$Lexer",
+      "org.apache.hadoop.mapreduce.lib.join.Parser$Node",
+      "org.apache.hadoop.mapreduce.lib.join.Parser$NodeToken",
+      "org.apache.hadoop.mapreduce.lib.join.Parser$NumToken",
+      "org.apache.hadoop.mapreduce.lib.join.Parser$StrToken",
+      "org.apache.hadoop.mapreduce.lib.join.Parser$TType",
+      "org.apache.hadoop.mapreduce.lib.join.Parser$Token",
+      "org.apache.hadoop.mapreduce.lib.join.Parser$WNode",
+      "org.apache.hadoop.mapreduce.lib.join.Parser$WrappedStatusReporter",
+      "org.apache.hadoop.mapreduce.lib.join.ResetableIterator",
+      "org.apache.hadoop.mapreduce.lib.join.ResetableIterator$EMPTY",
+      "org.apache.hadoop.mapreduce.lib.join.StreamBackedIterator",
+      "org.apache.hadoop.mapreduce.lib.join.StreamBackedIterator$ReplayableByteInputStream",
+      "org.apache.hadoop.mapreduce.lib.join.TupleWritable",
+      "org.apache.hadoop.mapreduce.lib.join.TupleWritable$1",
+      "org.apache.hadoop.mapreduce.lib.join.WrappedRecordReader",
+      "org.apache.hadoop.mapreduce.lib.map.MultithreadedMapper",
+      "org.apache.hadoop.mapreduce.lib.map.MultithreadedMapper$MapRunner",
+      "org.apache.hadoop.mapreduce.lib.map.MultithreadedMapper$SubMapRecordReader",
+      "org.apache.hadoop.mapreduce.lib.map.MultithreadedMapper$SubMapRecordWriter",
+      "org.apache.hadoop.mapreduce.lib.map.MultithreadedMapper$SubMapStatusReporter",
+      "org.apache.hadoop.mapreduce.lib.map.RegexMapper",
+      "org.apache.hadoop.mapreduce.lib.map.TokenCounterMapper",
+      "org.apache.hadoop.mapreduce.lib.map.WrappedMapper",
+      "org.apache.hadoop.mapreduce.lib.map.WrappedMapper$Context",
+      "org.apache.hadoop.mapreduce.lib.output.BindingPathOutputCommitter",
+      "org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter",
+      "org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter$CommittedTaskFilter",
+      "org.apache.hadoop.mapreduce.lib.output.FilterOutputFormat",
+      "org.apache.hadoop.mapreduce.lib.output.FilterOutputFormat$FilterRecordWriter",
+      "org.apache.hadoop.mapreduce.lib.output.LazyOutputFormat",
+      "org.apache.hadoop.mapreduce.lib.output.LazyOutputFormat$LazyRecordWriter",
+      "org.apache.hadoop.mapreduce.lib.output.MapFileOutputFormat",
+      "org.apache.hadoop.mapreduce.lib.output.MapFileOutputFormat$1",
+      "org.apache.hadoop.mapreduce.lib.output.MapFileOutputFormat$2",
+      "org.apache.hadoop.mapreduce.lib.output.MultipleOutputs$WrappedStatusReporter",
+      "org.apache.hadoop.mapreduce.lib.output.NamedCommitterFactory",
+      "org.apache.hadoop.mapreduce.lib.output.NullOutputFormat",
+      "org.apache.hadoop.mapreduce.lib.output.NullOutputFormat$1",
+      "org.apache.hadoop.mapreduce.lib.output.NullOutputFormat$2",
+      "org.apache.hadoop.mapreduce.lib.output.PartialFileOutputCommitter",
+      "org.apache.hadoop.mapreduce.lib.output.PartialOutputCommitter"
+    ],
+    "num_classes": 111,
+    "description": "1. Cluster 8: NormalizedResourceEvent, ReduceAttemptFinishedEvent, OracleDataDrivenDBRecordReader, OracleDateSplitter, TextSplitter, FieldSelectionHelper, FieldSelectionMapper, CombineFileRecordReaderWrapper\n2. This cluster consists of classes that handle various aspects of resource management and event tracking in the MapReduce system. The NormalizedResourceEvent class is used to record normalized map/reduce requirements, while the ReduceAttemptFinishedEvent class records the completion of a reduce attempt. The OracleDataDrivenDBRecordReader class is used to read records from an Oracle database, while the OracleDateSplitter and TextSplitter classes are used to split date/time values and text strings, respectively. The FieldSelectionHelper and FieldSelectionMapper classes are used for field selection in mappers, and the CombineFileRecordReaderWrapper class is a wrapper for a record reader that handles a single file split. Overall, this cluster plays a crucial role in resource management and event tracking in the MapReduce system."
+  },
+  "4": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.ReduceAttemptFinished",
+      "org.apache.hadoop.mapreduce.jobhistory.ReduceAttemptFinished$Builder"
+    ],
+    "num_classes": 2,
+    "description": "Title: MapReduce Reduce Attempt Finished\n\n1. Overall behaviour:\nThe ReduceAttemptFinished cluster is responsible for handling the completion of reduce tasks in the MapReduce system. It provides information about the completion of a reduce task, including the task ID, task status, and task finish time.\n\n2. Architecture and design patterns:\nThe cluster follows a client-server architecture, with clients submitting reduce tasks and servers processing and monitoring the tasks. The design pattern used is the observer pattern, where servers subscribe to client requests and update them when the task status changes.\n\n3. Components interaction:\nThe components in this cluster interact through a communication protocol, typically using Remote Procedure Call (RPC) or message passing. TheReduceAttemptFinished cluster components may also interact with other components in the MapReduce system, such as the JobTracker and TaskTracker, to coordinate the execution of reduce tasks.\n\n4. Role in MapReduce:\nThe ReduceAttemptFinished cluster plays a crucial role in the MapReduce system by providing a centralized location for monitoring and managing reduce tasks. It ensures that reduce tasks are completed successfully and provides feedback to the JobTracker about the status of the reduce task. This information is used to determine the overall progress and completion of the MapReduce job."
+  },
+  "1": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.TaskAttemptFinished",
+      "org.apache.hadoop.mapreduce.jobhistory.TaskAttemptFinished$Builder"
+    ],
+    "num_classes": 2,
+    "description": "1. \"MapReduce Task Attempt Management\"\n2. The architectural cluster, named \"MapReduce Task Attempt Management,\" is responsible for handling the completion of tasks in the MapReduce system. It includes classes such as TaskAttemptFinished and TaskAttemptFinished$Builder, which are used to build and manage task attempt finished events. These classes are part of the Apache Hadoop MapReduce framework, which is a popular distributed computing framework for processing large data sets. The cluster follows a client-server architecture, with clients submitting tasks to the server, which then coordinates the execution of those tasks across a cluster of nodes. The components in this cluster interact with each other through various APIs and protocols, such as the MapReduce protocol and the Hadoop Distributed File System (HDFS). The role of this cluster is to ensure the successful completion of tasks by managing their execution, monitoring their progress, and handling any failures that may occur during the execution."
+  },
+  "42": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.TaskAttemptStarted"
+    ],
+    "num_classes": 1,
+    "description": "Title: MapReduce Task Attempt Management\n\n1. The overall behaviour of this cluster is to manage the execution of tasks in the MapReduce system. It handles the initialization, execution, and completion of tasks, ensuring that they are executed correctly and efficiently.\n\n2. The architecture of this cluster follows the master-slave model, with a centralized TaskTracker component managing the execution of tasks on slave TaskAttempt components. The cluster uses the Hadoop Distributed File System (HDFS) to store and manage data.\n\n3. The components in this cluster interact with each other through a series of well-defined protocols and interfaces. The TaskTracker component communicates with the JobTracker component to request and manage tasks, while the TaskAttempt components communicate with the TaskTracker to report their status and receive instructions.\n\n4. The role of this cluster in the MapReduce system is critical, as it is responsible for executing the tasks that process and analyze the data. It ensures that the tasks are executed in a timely and efficient manner, and that the results are correctly and accurately communicated to other components in the system."
+  },
+  "11": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.TaskAttemptStarted$Builder"
+    ],
+    "num_classes": 1,
+    "description": "1. \"MapReduce Task Attempt Management\"\n2. This architectural cluster is responsible for managing task attempts in the MapReduce system. It includes classes such as TaskAttemptStarted$Builder, which is used to build instances of the TaskAttemptStarted class. The cluster follows the Builder pattern, which allows for the creation of complex objects with a step-by-step approach. The components in this cluster interact with each other to handle the execution and monitoring of task attempts, ensuring the efficient processing of data in the MapReduce framework."
+  },
+  "6": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.TaskAttemptUnsuccessfulCompletion",
+      "org.apache.hadoop.mapreduce.jobhistory.TaskAttemptUnsuccessfulCompletion$Builder"
+    ],
+    "num_classes": 2,
+    "description": "1. Architectural Title: MapReduce Task Attempt Unsuccessful Completion\n\n2. High-level Descriptive Summary:\nThe MapReduce Task Attempt Unsuccessful Completion cluster is responsible for handling unsuccessful task completion events in the Hadoop MapReduce system. It consists of two classes, TaskAttemptUnsuccessfulCompletion and TaskAttemptUnsuccessfulCompletion$Builder, which are used to build and manage unsuccessful task completion events. The TaskAttemptUnsuccessfulCompletion class represents the event itself, while the TaskAttemptUnsuccessfulCompletion$Builder class is used to construct instances of the event.\n\nThe cluster follows the Builder pattern, which is a creational design pattern that allows for the creation of complex objects step by step. This pattern is used to create instances of the TaskAttemptUnsuccessfulCompletion event, which can then be used to build and manage unsuccessful task completion events.\n\nThe components in this cluster interact with each other through the Builder pattern, which allows for the creation of unsuccessful task completion events with specific attributes and properties. The cluster plays a crucial role in the MapReduce system by providing a way to handle and manage unsuccessful task completion events, which can help in diagnosing and resolving issues that may arise during the execution of MapReduce jobs."
+  },
+  "2": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.TaskFailed",
+      "org.apache.hadoop.mapreduce.jobhistory.TaskFailed$Builder"
+    ],
+    "num_classes": 2,
+    "description": "Architectural Title: MapReduce Task Failure Handling\n\nHigh-Level Descriptive Summary:\nThe MapReduce Task Failure Handling cluster is responsible for managing and handling task failures in the Apache Hadoop MapReduce system. It consists of two classes, TaskFailed and TaskFailed$Builder, which provide functionality for recording and tracking task failures.\n\nThe TaskFailed class represents a failed task and contains information about the task's failure, such as the file not found error. It provides methods for accessing and manipulating this information.\n\nThe TaskFailed$Builder class is used to construct instances of the TaskFailed class. It provides methods for setting the failure information and building the TaskFailed object.\n\nThe cluster follows the Builder pattern, which allows for flexible and convenient construction of TaskFailed objects. The components in this cluster interact with each other through the Builder pattern, allowing for easy creation and management of task failure records.\n\nThe role of this cluster is to ensure that task failures are properly recorded and tracked, providing valuable information for debugging and system maintenance. It plays a crucial role in maintaining the reliability and robustness of the MapReduce system."
+  },
+  "0": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.TaskFinished",
+      "org.apache.hadoop.mapreduce.jobhistory.TaskFinished$Builder"
+    ],
+    "num_classes": 2,
+    "description": "1. Architectural Title: MapReduce Task Finishing Process\n\n2. High-level descriptive summary:\nThe MapReduce Task Finishing Process is responsible for handling the completion of tasks in the Hadoop MapReduce framework. It consists of two main classes, TaskFinished and TaskFinished$Builder, which are used to build and manage task completion events. The TaskFinished class represents a completed task, while the TaskFinished$Builder class is used to construct instances of TaskFinished. The TaskFinished class contains information about the completed task, such as its task ID, task attempt ID, task status, and task finish time. The TaskFinished$Builder class provides methods to set the values of these attributes. The TaskFinished class and TaskFinished$Builder class work together to provide a comprehensive and flexible way to manage task completion events in the MapReduce system."
+  },
+  "41": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.TaskStarted"
+    ],
+    "num_classes": 1,
+    "description": "1. MapReduce Task Management\n\n2. The MapReduce system is responsible for processing large data sets in a distributed environment. This architectural cluster is responsible for managing the tasks that are executed on the cluster. It includes components such as the TaskTracker, which is responsible for executing the tasks assigned to it by the JobTracker. The cluster also includes the JobHistoryServer, which is responsible for storing the history of completed jobs and providing a user interface for monitoring the system. The components in this cluster communicate with each other using the Hadoop RPC framework, which allows for efficient and reliable communication between the different components. The design pattern used in this cluster is the master-slave architecture, where the JobTracker acts as the master and coordinates the tasks, while the TaskTrackers act as slaves and execute the tasks. The role of this cluster is to ensure that the tasks are executed efficiently and reliably, and to provide a mechanism for monitoring and debugging the system."
+  },
+  "31": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.TaskStarted$Builder"
+    ],
+    "num_classes": 1,
+    "description": "1. Architectural Title: Task Management System\n\n2. High-level descriptive summary:\nThe Task Management System is responsible for handling the execution of tasks in the Hadoop MapReduce framework. It utilizes the Builder pattern to create instances of the TaskStarted class, which represents the event of a task being started. The Builder class provides a convenient way to set the attributes of the TaskStarted object.\n\nThe components of this cluster interact with each other through a well-defined interface, allowing for seamless communication and coordination. The system follows the principles of the Builder pattern, which promotes code reusability and simplifies the creation of complex objects.\n\nThe Task Management System plays a crucial role in the MapReduce system by ensuring that tasks are executed efficiently and effectively. It provides a robust and scalable architecture that can handle large-scale data processing requirements."
+  },
+  "40": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.TaskUpdated"
+    ],
+    "num_classes": 1,
+    "description": "1. \"MapReduce Task Management\"\n2. The MapReduce system is responsible for processing large data sets in a distributed environment. Cluster 40, which includes the TaskUpdated class, is responsible for managing the tasks assigned to the various nodes in the cluster. This cluster uses a combination of design patterns such as the observer pattern and the factory pattern to handle the communication and coordination between the different components. The TaskUpdated class, which is responsible for notifying the relevant components when a task has been updated, plays a crucial role in ensuring the efficient and effective processing of the data."
+  },
+  "34": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.jobhistory.TaskUpdated$Builder"
+    ],
+    "num_classes": 1,
+    "description": "Title: MapReduce Task Management\n\n1. The overall behaviour of this cluster is to manage the tasks in the MapReduce system.\n2. The architecture and design patterns used include a Builder pattern for creating TaskUpdated objects, which may be used to build and update task information.\n3. The components in this cluster interact with each other to manage the tasks, such as updating task status, tracking task progress, and handling task failures.\n4. The role of this cluster in the MapReduce system is to ensure that tasks are executed efficiently and effectively, and that any issues with tasks are promptly identified and resolved."
+  },
+  "15": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregator",
+      "org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorBaseDescriptor",
+      "org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorBaseDescriptor$MyEntry",
+      "org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorCombiner",
+      "org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorDescriptor",
+      "org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorJob",
+      "org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorJobBase",
+      "org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorMapper",
+      "org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorReducer",
+      "org.apache.hadoop.mapreduce.lib.aggregate.ValueHistogram",
+      "org.apache.hadoop.mapreduce.lib.chain.Chain",
+      "org.apache.hadoop.mapreduce.lib.chain.Chain$ChainBlockingQueue",
+      "org.apache.hadoop.mapreduce.lib.chain.Chain$ChainRecordReader",
+      "org.apache.hadoop.mapreduce.lib.chain.Chain$ChainRecordWriter",
+      "org.apache.hadoop.mapreduce.lib.chain.Chain$KeyValuePair",
+      "org.apache.hadoop.mapreduce.lib.chain.Chain$MapRunner",
+      "org.apache.hadoop.mapreduce.lib.chain.Chain$ReduceRunner",
+      "org.apache.hadoop.mapreduce.lib.chain.ChainMapContextImpl",
+      "org.apache.hadoop.mapreduce.lib.chain.ChainMapper",
+      "org.apache.hadoop.mapreduce.lib.chain.ChainReduceContextImpl",
+      "org.apache.hadoop.mapreduce.lib.chain.ChainReducer",
+      "org.apache.hadoop.mapreduce.lib.db.BigDecimalSplitter",
+      "org.apache.hadoop.mapreduce.lib.db.BooleanSplitter",
+      "org.apache.hadoop.mapreduce.lib.db.DBConfiguration",
+      "org.apache.hadoop.mapreduce.lib.db.DBInputFormat",
+      "org.apache.hadoop.mapreduce.lib.db.DBInputFormat$DBInputSplit",
+      "org.apache.hadoop.mapreduce.lib.db.DBInputFormat$NullDBWritable",
+      "org.apache.hadoop.mapreduce.lib.db.DBOutputFormat",
+      "org.apache.hadoop.mapreduce.lib.db.DBOutputFormat$DBRecordWriter",
+      "org.apache.hadoop.mapreduce.lib.db.DBRecordReader",
+      "org.apache.hadoop.mapreduce.lib.db.DBSplitter",
+      "org.apache.hadoop.mapreduce.lib.db.DBWritable",
+      "org.apache.hadoop.mapreduce.lib.db.DataDrivenDBInputFormat",
+      "org.apache.hadoop.mapreduce.lib.db.DataDrivenDBInputFormat$DataDrivenDBInputSplit",
+      "org.apache.hadoop.mapreduce.lib.db.DataDrivenDBRecordReader",
+      "org.apache.hadoop.mapreduce.lib.db.DateSplitter",
+      "org.apache.hadoop.mapreduce.lib.db.FloatSplitter",
+      "org.apache.hadoop.mapreduce.lib.db.IntegerSplitter",
+      "org.apache.hadoop.mapreduce.lib.db.MySQLDBRecordReader",
+      "org.apache.hadoop.mapreduce.lib.db.MySQLDataDrivenDBRecordReader",
+      "org.apache.hadoop.mapreduce.lib.db.OracleDBRecordReader",
+      "org.apache.hadoop.mapreduce.lib.db.OracleDataDrivenDBInputFormat"
+    ],
+    "num_classes": 42,
+    "description": "1. Value Aggregation Cluster\n2. This cluster is responsible for aggregating values in a distributed computing environment. It includes an interface for value aggregators, a base implementation for value aggregators, a combiner for the Apache Hadoop MapReduce framework, and a base class for map/reduce jobs using the Aggregate framework. The components of this cluster interact with each other to perform various simple aggregations, such as summing over numeric values, counting distinct values, computing the histogram of values, and computing the minimum, maximum, median, average, and standard deviation of numeric values. This cluster plays a crucial role in the MapReduce system by enabling efficient and effective aggregation of large datasets in a distributed environment."
+  },
+  "13": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.lib.output.FileOutputCommitterFactory",
+      "org.apache.hadoop.mapreduce.lib.output.PathOutputCommitter",
+      "org.apache.hadoop.mapreduce.lib.output.PathOutputCommitterFactory",
+      "org.apache.hadoop.mapreduce.lib.output.SequenceFileAsBinaryOutputFormat",
+      "org.apache.hadoop.mapreduce.lib.output.SequenceFileAsBinaryOutputFormat$1",
+      "org.apache.hadoop.mapreduce.lib.output.SequenceFileAsBinaryOutputFormat$WritableValueBytes",
+      "org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat",
+      "org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat$1",
+      "org.apache.hadoop.mapreduce.lib.output.TextOutputFormat",
+      "org.apache.hadoop.mapreduce.lib.output.TextOutputFormat$LineRecordWriter",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitter",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterConfig",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterConstants",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterFactory",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterStatisticNames",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.AbstractManifestData",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.DiagnosticKeys",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.DirEntry",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.EntryStatus",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.FileEntry",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.ManifestPrinter",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.ManifestSuccessData",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.TaskManifest",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.AuditingIntegration",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.EntryFileIO",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.EntryFileIO$1",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.EntryFileIO$Actions",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.EntryFileIO$EntryIterator",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.EntryFileIO$EntryWriter",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.EntryFileIO$QueueEntry",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.InternalConstants",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.LoadedManifestData",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.OutputValidationException",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.AbortTaskStage",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.AbstractJobOrTaskStage",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.AbstractJobOrTaskStage$CommitOutcome",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.CleanupJobStage",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.CleanupJobStage$Arguments",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.CleanupJobStage$Outcome",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.CleanupJobStage$Result",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.CommitJobStage",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.CommitJobStage$Arguments",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.CommitJobStage$Result",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.CommitTaskStage",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.CommitTaskStage$Result",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.CreateOutputDirectoriesStage",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.CreateOutputDirectoriesStage$1",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.CreateOutputDirectoriesStage$DirMapState",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.CreateOutputDirectoriesStage$Result",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.JobOrTaskStage",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.LoadManifestsStage",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.LoadManifestsStage$Arguments",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.LoadManifestsStage$EntryWriteException",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.LoadManifestsStage$Result",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.LoadManifestsStage$SummaryInfo",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.RenameFilesStage",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.SaveSuccessFileStage",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.SaveTaskManifestStage",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.SetupJobStage",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.SetupTaskStage",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.StageConfig",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.StageEventCallbacks",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.TaskAttemptScanDirectoryStage",
+      "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.ValidateRenamedFilesStage"
+    ],
+    "num_classes": 64,
+    "description": "1. OutputCommitterFactory, PathOutputCommitter, FileOutputCommitter, SequenceFileAsBinaryOutputFormat, SequenceFileOutputFormat, TextOutputFormat\n2. This architectural cluster is responsible for handling the commitment of output data in the MapReduce system. It includes classes such as OutputCommitterFactory, PathOutputCommitter, FileOutputCommitter, SequenceFileAsBinaryOutputFormat, SequenceFileOutputFormat, and TextOutputFormat. These classes work together to create and manage output committers for different types of output data, such as SequenceFiles and text files. The OutputCommitterFactory class is used to create instances of output committers based on the output path and task attempt context. The PathOutputCommitter class provides a base implementation for committers that write data to a working directory and commit it to the final directory. The FileOutputCommitter class is responsible for committing the output of a MapReduce job to a file system. The SequenceFileAsBinaryOutputFormat class provides an implementation of an OutputFormat that writes keys and values to SequenceFiles in binary(raw) format. The SequenceFileOutputFormat class provides an implementation of the OutputFormat interface for writing SequenceFile data. The TextOutputFormat class provides an implementation of the OutputFormat interface, which is used to write plain text files. These classes work together to ensure that the output data is properly committed and stored in the desired format."
+  },
+  "29": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.lib.output.FileOutputFormat",
+      "org.apache.hadoop.mapreduce.lib.output.FileOutputFormat$Counter"
+    ],
+    "num_classes": 2,
+    "description": "1. FileOutputFormat: A Base Class for Output Formats in Apache Hadoop MapReduce\n2. The FileOutputFormat class is an abstract base class for output formats that read from FileSystems. It provides functionality for compressing job outputs, setting output directories, and generating output file names. It includes methods for setting and getting the compression status of the job, as well as setting and getting the CompressionCodec to be used for compressing job outputs. It also provides a method for getting the RecordWriter for the job. The class also includes a private inner class called PathOutputCommitter that extends the OutputCommitter class. The FileOutputFormat class plays a crucial role in the MapReduce system by providing a foundation for implementing output formats that read from FileSystems and handle compression and output committing."
+  },
+  "14": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.lib.partition.HashPartitioner",
+      "org.apache.hadoop.mapreduce.lib.partition.RehashPartitioner",
+      "org.apache.hadoop.mapreduce.lib.partition.TotalOrderPartitioner",
+      "org.apache.hadoop.mapreduce.lib.partition.TotalOrderPartitioner$BinarySearchNode",
+      "org.apache.hadoop.mapreduce.lib.partition.TotalOrderPartitioner$CarriedTrieNodeRef",
+      "org.apache.hadoop.mapreduce.lib.partition.TotalOrderPartitioner$InnerTrieNode",
+      "org.apache.hadoop.mapreduce.lib.partition.TotalOrderPartitioner$LeafTrieNode",
+      "org.apache.hadoop.mapreduce.lib.partition.TotalOrderPartitioner$Node",
+      "org.apache.hadoop.mapreduce.lib.partition.TotalOrderPartitioner$SinglySplitTrieNode",
+      "org.apache.hadoop.mapreduce.lib.partition.TotalOrderPartitioner$TrieNode",
+      "org.apache.hadoop.mapreduce.lib.partition.TotalOrderPartitioner$UnsplitTrieNode",
+      "org.apache.hadoop.mapreduce.lib.reduce.IntSumReducer",
+      "org.apache.hadoop.mapreduce.lib.reduce.LongSumReducer",
+      "org.apache.hadoop.mapreduce.security.IntermediateEncryptedStream",
+      "org.apache.hadoop.mapreduce.security.token.JobTokenSelector",
+      "org.apache.hadoop.mapreduce.security.token.delegation.DelegationTokenIdentifier",
+      "org.apache.hadoop.mapreduce.security.token.delegation.DelegationTokenSecretManager",
+      "org.apache.hadoop.mapreduce.security.token.delegation.DelegationTokenSelector",
+      "org.apache.hadoop.mapreduce.server.jobtracker.JTConfig"
+    ],
+    "num_classes": 19,
+    "description": "1. TotalOrderPartitioner\n2. This cluster implements a partitioner that effects a total order by reading split points from an externally generated source. It uses a trie of the first few bytes of the split points if the key type is BinaryComparable and a binary search of the partition keyset otherwise. The partitioner is used to distribute data across different reduce tasks based on the hash code of the key. This can be useful in scenarios where the data needs to be evenly distributed or when load balancing is required. The components of this cluster interact with each other by reading the partition file and building indexing data structures. The role of this cluster in the MapReduce system is to provide a scalable and efficient way to partition data for parallel processing across multiple nodes in a cluster."
+  },
+  "33": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.lib.partition.InputSampler",
+      "org.apache.hadoop.mapreduce.lib.partition.InputSampler$IntervalSampler",
+      "org.apache.hadoop.mapreduce.lib.partition.InputSampler$RandomSampler",
+      "org.apache.hadoop.mapreduce.lib.partition.InputSampler$Sampler",
+      "org.apache.hadoop.mapreduce.lib.partition.InputSampler$SplitSampler",
+      "org.apache.hadoop.mapreduce.lib.partition.KeyFieldBasedComparator",
+      "org.apache.hadoop.mapreduce.lib.partition.KeyFieldBasedPartitioner",
+      "org.apache.hadoop.mapreduce.lib.partition.KeyFieldHelper",
+      "org.apache.hadoop.mapreduce.lib.partition.KeyFieldHelper$KeyDescription",
+      "org.apache.hadoop.mapreduce.lib.reduce.WrappedReducer",
+      "org.apache.hadoop.mapreduce.lib.reduce.WrappedReducer$Context",
+      "org.apache.hadoop.mapreduce.protocol.ClientProtocol",
+      "org.apache.hadoop.mapreduce.protocol.ClientProtocolProvider",
+      "org.apache.hadoop.mapreduce.security.SecureShuffleUtils",
+      "org.apache.hadoop.mapreduce.security.SpillCallBackInjector",
+      "org.apache.hadoop.mapreduce.security.SpillCallBackPathsFinder",
+      "org.apache.hadoop.mapreduce.security.TokenCache",
+      "org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier",
+      "org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier$Renewer",
+      "org.apache.hadoop.mapreduce.security.token.JobTokenSecretManager"
+    ],
+    "num_classes": 20,
+    "description": "1. InputSampler: A Utility for Collecting Samples and Writing a Partition File for the TotalOrderPartitioner\n2. The InputSampler utility is a part of the Apache Hadoop MapReduce library. It provides a framework for sampling data from various input sources and writing the sampled data to a partition file. The code includes a sampler interface, a split sampler, a random sampler, and a main method for running the sampler. The sampler can be configured with various parameters such as the number of samples, the maximum number of splits to sample, and the input format. The code also includes a usage guide and logging functionality. The InputSampler utility is used to collect a subset of keys from the input data and is used in the TotalOrderPartitioner for distributing data across reducers."
+  },
+  "32": {
+    "classes": [
+      "org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput",
+      "org.apache.hadoop.mapreduce.task.reduce.InMemoryReader",
+      "org.apache.hadoop.mapreduce.task.reduce.InMemoryWriter",
+      "org.apache.hadoop.mapreduce.task.reduce.LocalFetcher",
+      "org.apache.hadoop.mapreduce.task.reduce.MapHost",
+      "org.apache.hadoop.mapreduce.task.reduce.MapHost$State",
+      "org.apache.hadoop.mapreduce.task.reduce.MapOutput",
+      "org.apache.hadoop.mapreduce.task.reduce.MapOutput$MapOutputComparator",
+      "org.apache.hadoop.mapreduce.task.reduce.MergeManager",
+      "org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl",
+      "org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl$1",
+      "org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl$CompressAwarePath",
+      "org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl$InMemoryMerger",
+      "org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl$IntermediateMemoryToMemoryMerger",
+      "org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl$OnDiskMerger",
+      "org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl$RawKVIteratorReader",
+      "org.apache.hadoop.mapreduce.task.reduce.MergeThread",
+      "org.apache.hadoop.mapreduce.task.reduce.OnDiskMapOutput",
+      "org.apache.hadoop.mapreduce.task.reduce.Shuffle",
+      "org.apache.hadoop.mapreduce.task.reduce.Shuffle$ShuffleError",
+      "org.apache.hadoop.mapreduce.task.reduce.ShuffleClientMetrics",
+      "org.apache.hadoop.mapreduce.task.reduce.ShuffleHeader",
+      "org.apache.hadoop.mapreduce.task.reduce.ShuffleScheduler",
+      "org.apache.hadoop.mapreduce.task.reduce.ShuffleSchedulerImpl",
+      "org.apache.hadoop.mapreduce.task.reduce.ShuffleSchedulerImpl$1",
+      "org.apache.hadoop.mapreduce.task.reduce.ShuffleSchedulerImpl$2",
+      "org.apache.hadoop.mapreduce.task.reduce.ShuffleSchedulerImpl$CopyTimeTracker",
+      "org.apache.hadoop.mapreduce.task.reduce.ShuffleSchedulerImpl$CopyTimeTracker$Interval",
+      "org.apache.hadoop.mapreduce.task.reduce.ShuffleSchedulerImpl$Penalty",
+      "org.apache.hadoop.mapreduce.task.reduce.ShuffleSchedulerImpl$Referee",
+      "org.apache.hadoop.mapreduce.tools.CLI",
+      "org.apache.hadoop.mapreduce.util.ConfigUtil",
+      "org.apache.hadoop.mapreduce.util.CountersStrings",
+      "org.apache.hadoop.mapreduce.util.HostUtil",
+      "org.apache.hadoop.mapreduce.util.JobHistoryEventUtils",
+      "org.apache.hadoop.mapreduce.util.MRJobConfUtil",
+      "org.apache.hadoop.mapreduce.util.ProcessTree",
+      "org.apache.hadoop.mapreduce.util.ProcessTree$SigKillThread",
+      "org.apache.hadoop.mapreduce.util.ResourceBundles",
+      "org.apache.hadoop.mapreduce.v2.LogParams"
+    ],
+    "num_classes": 40,
+    "description": "1. In-memory MapOutput\n2. The provided Java source code implements an in-memory map output class for the Apache Hadoop MapReduce framework. The class is used to store map output data in memory, which can be used for shuffle and merge operations. The class implements the InMemoryMapOutput interface and extends the IFileWrappedMapOutput class. It has a byte array to store the map output data, a BoundedByteArrayOutputStream to write the data to, and optional compression and decompression functionality based on a specified CompressionCodec. The class provides methods to get the memory buffer, the byte array output stream, and to commit or abort the map output. The doShuffle method is overridden to read map output data from an input stream, decompress it if necessary, and store it in the memory buffer. The class also provides a description method to return the description of the in-memory map output. Overall, the class provides a way to efficiently store and retrieve map output data in memory for shuffle and merge operations in the Hadoop MapReduce framework."
+  }
+}
