@@ -14,7 +14,7 @@ source ~/Week4/venv/bin/activate
 
 export HF_HOME=/scratch/hpc-prf-dssecs/group13
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
-export HF_TOKEN="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"
+export HF_TOKEN="[HF_TOKEN]"
 
 echo "Starting Week 4 – $SCRIPT..."
 python ~/Week4/$SCRIPT
