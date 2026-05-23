@@ -49,7 +49,7 @@ print("Model loaded.")
 # ==========================================
 # 2. HELPER – RUN INFERENCE
 # ==========================================
-def run_inference(prompt_messages, max_new_tokens=512):
+def run_inference(prompt_messages, max_new_tokens=2048):
     inputs = tokenizer.apply_chat_template(
         prompt_messages,
         add_generation_prompt=True,
@@ -108,7 +108,24 @@ def find_java_file(fqn, java_root):
     return None
 
 # ==========================================
-# 5. PHASE 1 – COT FILE SUMMARIES
+# 5. CLEAN BAD ENTRIES FROM PREVIOUS RUN
+# ==========================================
+if os.path.exists(PHASE2_OUTPUT):
+    with open(PHASE2_OUTPUT, "r") as f:
+        existing = json.load(f)
+    cleaned = {k: v for k, v in existing.items()
+               if v["description"].strip() != "... [TRUNCATED]"
+               and len(v["description"].strip()) >= 50}
+    removed = len(existing) - len(cleaned)
+    if removed > 0:
+        print(f"🧹 Removed {removed} bad entries from previous run.")
+        with open(PHASE2_OUTPUT, "w") as f:
+            json.dump(cleaned, f, indent=2)
+    else:
+        print(f"✅ No bad entries found in existing output.")
+
+# ==========================================
+# 6. PHASE 1 – COT FILE SUMMARIES
 # ==========================================
 print("\n" + "="*60)
 print("  PHASE 1 – Chain-of-Thought File-level Summaries")
@@ -136,10 +153,10 @@ for cluster_id, classes in cluster_to_classes.items():
         with open(java_file, "r", encoding="utf-8", errors="ignore") as f:
             source_code = f.read()
 
+        # Silently truncate — no tag added
         if len(source_code) > 6000:
-            source_code = source_code[:6000] + "\n// [TRUNCATED]"
+            source_code = source_code[:6000]
 
-        # CHAIN-OF-THOUGHT PROMPT — explicit step by step reasoning
         prompt = [
             {
                 "role": "system",
@@ -161,7 +178,7 @@ Step 5 - Final summary: Based on your reasoning above, write a concise summary (
             }
         ]
 
-        summary = run_inference(prompt, max_new_tokens=512)
+        summary = run_inference(prompt, max_new_tokens=768)
         file_summaries[fqn] = summary
         print(f"  ✅ {fqn.split('.')[-1]}")
 
@@ -171,15 +188,24 @@ Step 5 - Final summary: Based on your reasoning above, write a concise summary (
 print(f"\n✅ Phase 1 complete. Saved to {PHASE1_OUTPUT}")
 
 # ==========================================
-# 6. PHASE 2 – COT CLUSTER DESCRIPTIONS
+# 7. PHASE 2 – COT CLUSTER DESCRIPTIONS
 # ==========================================
 print("\n" + "="*60)
 print("  PHASE 2 – Chain-of-Thought Cluster-level Descriptions")
 print("="*60)
 
-cluster_descriptions = {}
+if os.path.exists(PHASE2_OUTPUT):
+    with open(PHASE2_OUTPUT, "r") as f:
+        cluster_descriptions = json.load(f)
+    print(f"Resuming — {len(cluster_descriptions)} clusters already done.")
+else:
+    cluster_descriptions = {}
 
 for cluster_id, classes in cluster_to_classes.items():
+    if str(cluster_id) in cluster_descriptions:
+        print(f"  Skipping Cluster {cluster_id} (already done)")
+        continue
+
     print(f"\nProcessing Cluster {cluster_id} ({len(classes)} classes)...")
 
     summaries_text = ""
@@ -188,10 +214,10 @@ for cluster_id, classes in cluster_to_classes.items():
         summary    = file_summaries.get(fqn, "No summary available.")
         summaries_text += f"\n### {short_name}\n{summary}\n"
 
+    # Silently truncate — no tag added
     if len(summaries_text) > 8000:
-        summaries_text = summaries_text[:8000] + "\n... [TRUNCATED]"
+        summaries_text = summaries_text[:8000]
 
-    # CHAIN-OF-THOUGHT PROMPT — explicit step by step reasoning
     prompt = [
         {
             "role": "system",
@@ -215,7 +241,7 @@ Class summaries:
         }
     ]
 
-    description = run_inference(prompt, max_new_tokens=512)
+    description = run_inference(prompt, max_new_tokens=2048)
     cluster_descriptions[str(cluster_id)] = {
         "classes": classes,
         "num_classes": len(classes),
