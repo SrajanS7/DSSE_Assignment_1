@@ -107,7 +107,7 @@ def run_inference(messages, max_new_tokens=512):
 # ============================================================
 # 4. PARSE RSF → cluster_to_files (FILE-LEVEL, preprocessed)
 #
-#   Preprocessing (required by TA for LIMBO and ACDC):
+#   Preprocessing
 #   - Strip inner class suffixes:  Job$1 → Job
 #   - Deduplicate: multiple inner classes of same file → one entry
 #   - This ensures clusters contain .java file references, not class references
