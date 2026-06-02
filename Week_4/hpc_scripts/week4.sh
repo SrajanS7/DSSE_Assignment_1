@@ -5,17 +5,13 @@
 #SBATCH --partition=gpu
 #SBATCH --mem=240G
 #SBATCH --output=week4_group13_%j.log
-
 module purge
 module load lang/Python/3.10.4-GCCcore-11.3.0
 module load system/CUDA/12.4.0
-
 source ~/Week4/venv/bin/activate
-
 export HF_HOME=/scratch/hpc-prf-dssecs/group13
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
-export HF_TOKEN="[HF_TOKEN]"
-
-echo "Starting Week 4 – $SCRIPT..."
-python ~/Week4/$SCRIPT
+export HF_TOKEN="xyzabc"
+echo "Starting Week 4 – $SCRIPT ($ALGO)..."
+python ~/Week4/$SCRIPT --algo $ALGO
 echo "Done."
